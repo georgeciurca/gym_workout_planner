@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>gym workout planner</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <p class="alert"></p>
+        <h1>gym workout planner</h1>
+        <div class="form-control">
+          <input
+            type="text"
+            class="input"
+            id="input"
+            placeholder="Enter an activity.."
+          />
+          <button type="submit" class="submit-btn">
+            <img src="/images/add_icon.svg" alt="" />
+          </button>
+        </div>
+      </form>
+
+      <div class="activity-container">
+          <div class="activities">
+              <ul class="activities" id="activities">
+                  <li class="activities-li">
+                    <p class="title">${value}</p>
+                    <div class="btn-container">
+
+                      <button type="button" class="remove-btn">
+                        <img src="/images/remove_icon.svg" class="img-li-remove" alt="">
+                      </button>
+
+                      <button type="button" class="add-btn">                     
+                        <img src="/images/done_icon.svg" class="img-li-done" alt="">   
+                      </button>
+                    </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+     
+      <div class="separation"></div>
+
+      <div class="completed-activity-container">
+        <div class="completed-activities">
+            <ul class="completed-activities" id="completed-activities">
+                <li class="completed-li">
+                <p class="title">${value}</p>
+                    <div class="btn-container">
+
+                      <button type="button" class="remove-btn">
+                        <img src="/images/remove_icon.svg" class="img-li-remove" alt="">
+                      </button>
+
+                      <button type="button" class="add-btn">                     
+                        <img src="/images/done_icon.svg" class="img-li-completed" alt="">   
+                      </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        <!-- <button class="clear-btn">Clear All Activities</button> -->
+      </div>
+    </div>
+  </body>
+</html>
